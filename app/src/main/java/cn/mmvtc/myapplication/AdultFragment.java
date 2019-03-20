@@ -15,7 +15,7 @@ import org.jsoup.select.Elements;
 public class AdultFragment extends BaseFragment {
 
     String navigation[] ={"招生信息->","1240","资源下载->","1248","函授教育->","1241","在线培训->","1564"};
-
+    final String testGit = " ";
     String url = "";
     @Override
     public String initurl_banner() {

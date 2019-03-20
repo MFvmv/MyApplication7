@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp"
+    tools:context=".LoginActivity" >
+    <TextView
+        android:id="@+id/tv_login_back"
+        android:layout_below="@+id/btn_login"
+        android:layout_marginTop="10dp"
+        android:layout_alignRight="@id/btn_login"
+        android:text="返回"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_above="@+id/et_name"
+        android:layout_marginBottom="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/app_logo"/>
+
+    <EditText
+        android:id="@+id/et_name"
+        android:textCursorDrawable="@drawable/cursor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background"
+        android:layout_above="@+id/et_password"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="5dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:hint="@string/et_name"/>
+
+    <EditText
+        android:paddingLeft="5dp"
+        android:digits="@string/rule_text"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@drawable/cursor"
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/background"
+        android:layout_centerVertical="true"
+        android:textSize="20sp"
+        android:hint="@string/et_password"/>
+
+
+    <LinearLayout
+        android:id="@+id/ll_vertify"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:paddingLeft="5dp"
+            android:digits="@string/num_text"
+            android:inputType="text"
+            android:textCursorDrawable="@drawable/cursor"
+            android:background="@drawable/background"
+            android:id="@+id/et_vertify"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:hint="@string/et_vertify"/>
+
+        <ImageView
+            android:id="@+id/iv_vertify"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/cb_isSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_vertify"
+        android:layout_marginTop="10dp"
+        android:textColor="#666"
+        android:text="@string/isSave"/>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cb_isSave"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/login"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        android:text="@string/btn_login"/>
+
+</RelativeLayout>

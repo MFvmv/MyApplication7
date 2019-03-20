@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <!--<group-->
+    <!--android:checkableBehavior="single">-->
+    <!--<item-->
+    <!--android:id="@+id/favorite"-->
+    <!--android:icon="@mipmap/v"-->
+    <!--android:checkable="true"-->
+    <!--android:title="    会员"/>-->
+
+    <!--</group>-->
+    <item
+        android:id="@+id/it_login"
+        android:visible="false"
+        android:icon="@android:drawable/ic_lock_lock"
+        android:title="    登录"
+        />
+
+    <item
+        android:id="@+id/it_score"
+        android:icon="@drawable/score"
+        android:visible="false"
+        android:title="    成绩"/>
+    <item
+        android:id="@+id/it_me"
+        android:icon="@drawable/me"
+        android:visible="false"
+        android:title="    我的"/>
+    <item
+        android:id="@+id/it_about"
+        android:icon="@drawable/me"
+        android:title="    关于我们"/>
+</menu>

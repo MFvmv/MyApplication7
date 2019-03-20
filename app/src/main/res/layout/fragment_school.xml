@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="250dp"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_school_overview"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/layout_school"-->
+            <!--android:background="@drawable/img1"-->
+            <!--android:text="@string/school_overview"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/tv_school_leader"-->
+            <!--android:background="@drawable/img2"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/layout_school"-->
+            <!--android:text="@string/school_leader"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:background="@drawable/img3"-->
+            <!--android:id="@+id/tv_leader_function"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/layout_school"-->
+            <!--android:text="@string/leader_function"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:background="@drawable/img4"-->
+            <!--android:id="@+id/tv_school_history"-->
+            <!--android:text="@string/school_history"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--style="@style/layout_school"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0px"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal"-->
+        <!--&gt;-->
+        <!--<TextView-->
+            <!--android:background="@drawable/img5"-->
+            <!--android:id="@+id/tv_school_scenery"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--style="@style/layout_school"-->
+            <!--android:text="@string/school_scenery"-->
+            <!--/>-->
+        <!--<TextView-->
+            <!--android:background="@drawable/img6"-->
+            <!--android:id="@+id/tv_school_logo"-->
+            <!--android:text="@string/school_logo"-->
+            <!--android:layout_width="0px"-->
+            <!--android:layout_height="match_parent"-->
+            <!--style="@style/layout_school"-->
+            <!--android:layout_weight="1"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+    </com.youth.banner.Banner>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <ListView
+            android:background="#eee"
+            android:id="@+id/lv_school"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+
+</LinearLayout>
